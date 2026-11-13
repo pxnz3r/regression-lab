@@ -1,0 +1,7 @@
+Model,Score,Test value,Low,High
+Linear Regression,MAE,0.7462,0.6179,0.9219
+Linear Regression,R²,0.8633,0.7492,0.9405
+Random Forest,MAE,0.7311,0.5924,0.916
+Random Forest,R²,0.8502,0.7235,0.9393
+Average,MAE,2.3946,2.0747,2.764
+Average,R²,-0.0322,-0.1357,-0.0005

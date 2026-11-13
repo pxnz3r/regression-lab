@@ -97,6 +97,14 @@
       "Veenker"
     ]
   },
+  "findings": [
+    "Random Forest scores R\u00b2 0.899 on the test set (95% interval 0.862 to 0.927); the baseline that ignores the inputs (Average) scores -0.001.",
+    "Random Forest against Linear Regression on error sizes (Wilcoxon signed-rank): real difference (p = 0.000).",
+    "Random Forest against Average on error sizes (Wilcoxon signed-rank): real difference (p = 0.000).",
+    "Linear Regression generalises well: training and validation r2 are close (+0.027); validation has levelled off, so more data alone would help little.",
+    "Random Forest overfits: training r2 0.975 against validation 0.824; validation has levelled off, so more data alone would help little.",
+    "Random Forest is most biased for Sale price ($) 234,800 to 755,000: it predicts too low by 17,625 on average there (MAE 35,204)."
+  ],
   "model_files": {
     "Linear Regression": "linear_regression.joblib",
     "Random Forest": "random_forest.joblib",

@@ -38,6 +38,7 @@ from pxlab.tabular.explain import (
     plot_coefficients,
     plot_permutation_importance,
 )
+from pxlab.tabular.study import run_study
 from pxlab.tabular.train import best_model_name, save_models, train_models
 from regression_lab.data import load_dataset
 from regression_lab.explain import persistence_row
@@ -90,6 +91,10 @@ def run_dataset(spec):
     )
     plot_permutation_importance(importance, filename=f"{folder}/permutation_importance.png")
 
+    study = run_study(
+        spec, results, best_model_name(results), train_features, train_target, test_features, test_target, folder
+    )
+
     model_info = {
         "dataset": spec["name"],
         "best_model": best_model_name(results),
@@ -99,6 +104,7 @@ def run_dataset(spec):
         "cv_scores": {name: r["cv_score"] for name, r in results.items()},
     }
     model_info.update(input_summary(train_features, spec))
+    model_info.update(study)
     save_models(results, model_info, folder=model_folder)
 
 

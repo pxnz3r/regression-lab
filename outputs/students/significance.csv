@@ -1,0 +1,3 @@
+Best model,Compared with,Best is better on,Other is better on,Test,p-value,Verdict
+Random Forest,Linear Regression,72,58,Wilcoxon signed-rank,0.2323,Could be chance
+Random Forest,Average,109,21,Wilcoxon signed-rank,0.0,Real difference

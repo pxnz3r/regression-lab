@@ -1,0 +1,13 @@
+Model,Training rows,Training score,Validation score
+Linear Regression,140,0.8579,0.689
+Linear Regression,298,0.8411,0.7489
+Linear Regression,457,0.8109,0.7764
+Linear Regression,616,0.8133,0.7818
+Linear Regression,775,0.8078,0.7787
+Linear Regression,934,0.8111,0.7839
+Random Forest,140,0.9678,0.7551
+Random Forest,298,0.9726,0.8102
+Random Forest,457,0.9729,0.8119
+Random Forest,616,0.9732,0.8102
+Random Forest,775,0.9743,0.8181
+Random Forest,934,0.9754,0.8236

@@ -31,6 +31,7 @@ The brief's inputs map to these columns: area is living, basement and lot area; 
    - Permutation importance on the test set: shuffle one input 10 times and record the drop in R².
    - Residual plots and the 20 largest test errors.
    - In the app, a single prediction is split into the average prediction plus one contribution per input (weight times the input's distance from its training average).
+7. **In-depth analysis** (`pxlab.tabular.study`): 1,000-round bootstrap 95% intervals for the headline test scores, next to a baseline that ignores the inputs; a Wilcoxon signed-rank test of the best model's errors against each other model's; learning curves; and an error analysis of size and bias across the range of the target, and per category where a dataset has category inputs. Each finding is one sentence in `outputs/<dataset>/key_findings.csv`.
 
 ## Limits
 

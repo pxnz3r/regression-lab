@@ -1,0 +1,7 @@
+Finding
+Linear Regression scores R² 0.900 on the test set (95% interval 0.888 to 0.912); the baseline that ignores the inputs (Average) scores -0.029.
+Linear Regression against Random Forest on error sizes (Wilcoxon signed-rank): could be chance (p = 0.127).
+Linear Regression against Average on error sizes (Wilcoxon signed-rank): real difference (p = 0.000).
+"Linear Regression generalises well: training and validation r2 are close (+0.020); validation has levelled off, so more data alone would help little."
+"Random Forest generalises well: training and validation r2 are close (+0.074); validation has levelled off, so more data alone would help little."
+Linear Regression is most biased for Mean temperature tomorrow (°C) -2.9 to 7.1: it predicts too high by 1.09 on average there (MAE 1.59).

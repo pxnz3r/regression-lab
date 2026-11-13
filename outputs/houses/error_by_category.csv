@@ -1,0 +1,9 @@
+Input,Value,Cases,MAE,Mean error
+Neighbourhood,NAmes,44,9021.7787,1482.5572
+Neighbourhood,CollgCr,35,13716.7105,-1225.0278
+Neighbourhood,OldTown,22,13220.5554,-8006.9306
+Neighbourhood,Somerst,17,14786.8682,2789.6161
+Neighbourhood,Sawyer,16,13183.4881,-6731.8019
+Neighbourhood,NridgHt,16,39804.4765,18024.3169
+Neighbourhood,SawyerW,15,19127.904,5754.888
+Neighbourhood,Gilbert,14,12785.919,-2429.9324

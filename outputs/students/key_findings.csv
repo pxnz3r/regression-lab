@@ -1,0 +1,7 @@
+Finding
+Random Forest scores R² 0.850 on the test set (95% interval 0.723 to 0.939); the baseline that ignores the inputs (Average) scores -0.032.
+Random Forest against Linear Regression on error sizes (Wilcoxon signed-rank): could be chance (p = 0.232).
+Random Forest against Average on error sizes (Wilcoxon signed-rank): real difference (p = 0.000).
+"Linear Regression generalises well: training and validation r2 are close (+0.006); validation has levelled off, so more data alone would help little."
+"Random Forest generalises well: training and validation r2 are close (+0.044); validation is still rising, so more data would likely help."
+Random Forest is most biased for Final grade (0 to 20) 15 to 19: it predicts too low by 0.309 on average there (MAE 0.534).
