@@ -206,7 +206,8 @@ def save_models(results, model_info, folder=MODELS_FOLDER):
     model_info["best_params"] = {}
     for model_name, result in results.items():
         file_name = file_name_for(model_name)
-        joblib.dump(result["pipeline"], os.path.join(folder, file_name))
+        # compress=3 keeps big models (random forests) small enough for GitHub.
+        joblib.dump(result["pipeline"], os.path.join(folder, file_name), compress=3)
         model_info["model_files"][model_name] = file_name
         model_info["best_params"][model_name] = {k: plain_value(v) for k, v in result["best_params"].items()}
     with open(os.path.join(folder, MODEL_INFO_FILE), "w") as file:
