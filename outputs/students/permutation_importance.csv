@@ -1,0 +1,6 @@
+,Linear Regression,Random Forest
+Second-term grade (0 to 20),1.3463,1.6203
+First-term grade (0 to 20),0.0283,-0.0001
+Absences,0.0028,0.0497
+Past class failures,0.0024,0.012
+Weekly study time (band),0.0005,-0.0004

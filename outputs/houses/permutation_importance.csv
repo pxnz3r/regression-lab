@@ -1,0 +1,10 @@
+,Linear Regression,Random Forest
+Living area (sq ft),0.2353,0.1883
+Overall quality (1 to 10),0.1788,0.5704
+Neighbourhood,0.1143,0.0137
+Garage size (cars),0.035,0.0371
+Basement area (sq ft),0.0304,0.0931
+Age when sold (years),0.0261,0.0312
+Lot area (sq ft),0.0077,0.0231
+Bedrooms,0.0045,0.006
+Full bathrooms,-0.0003,0.0076

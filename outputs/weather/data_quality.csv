@@ -1,0 +1,13 @@
+Column,Type,Missing,Distinct values
+temp_mean,numeric,0,289
+temp_max,numeric,0,329
+temp_min,numeric,0,260
+humidity,numeric,0,58
+precipitation,numeric,0,204
+wind_max,numeric,0,414
+pressure,numeric,0,569
+pressure_change,numeric,0,383
+cloud_cover,numeric,0,101
+radiation,numeric,0,2222
+month,category,0,12
+temp_tomorrow,target,0,289

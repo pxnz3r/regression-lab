@@ -1,0 +1,109 @@
+{
+  "dataset": "Tomorrow's temperature",
+  "best_model": "Linear Regression",
+  "test_scores": {
+    "Linear Regression": {
+      "MAE": 1.33912060736019,
+      "RMSE": 1.7435260146547362,
+      "R\u00b2": 0.8999449123963956
+    },
+    "Random Forest": {
+      "MAE": 1.3650927924363556,
+      "RMSE": 1.7740883142628414,
+      "R\u00b2": 0.8964064338760713
+    },
+    "Average": {
+      "MAE": 4.56372930471162,
+      "RMSE": 5.591694385244001,
+      "R\u00b2": -0.02912746106198405
+    }
+  },
+  "cv_scores": {
+    "Linear Regression": 0.9033375290350485,
+    "Random Forest": 0.8968697514858761,
+    "Average": -0.015490842985124199
+  },
+  "default_values": {
+    "temp_mean": 10.8,
+    "temp_max": 14.2,
+    "temp_min": 7.2,
+    "humidity": 80.0,
+    "precipitation": 0.2,
+    "wind_max": 19.8,
+    "pressure": 1016.0,
+    "pressure_change": -0.2,
+    "cloud_cover": 72.0,
+    "radiation": 9.19,
+    "month": 3
+  },
+  "feature_ranges": {
+    "temp_mean": [
+      -6.4,
+      27.5
+    ],
+    "temp_max": [
+      -1.2,
+      35.2
+    ],
+    "temp_min": [
+      -10.4,
+      20.2
+    ],
+    "humidity": [
+      45.0,
+      100.0
+    ],
+    "precipitation": [
+      0.0,
+      35.2
+    ],
+    "wind_max": [
+      5.5,
+      53.7
+    ],
+    "pressure": [
+      973.7,
+      1047.6
+    ],
+    "pressure_change": [
+      -38.7,
+      27.8
+    ],
+    "cloud_cover": [
+      0.0,
+      100.0
+    ],
+    "radiation": [
+      0.18,
+      29.49
+    ]
+  },
+  "category_options": {
+    "month": [
+      1,
+      10,
+      11,
+      12,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "model_files": {
+    "Linear Regression": "linear_regression.joblib",
+    "Random Forest": "random_forest.joblib",
+    "Average": "average.joblib"
+  },
+  "best_params": {
+    "Linear Regression": {},
+    "Random Forest": {
+      "min_samples_leaf": 5
+    },
+    "Average": {}
+  }
+}

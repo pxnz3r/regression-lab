@@ -1,0 +1,112 @@
+{
+  "dataset": "House prices",
+  "best_model": "Random Forest",
+  "test_scores": {
+    "Linear Regression": {
+      "MAE": 21797.427741049145,
+      "RMSE": 35827.97100318726,
+      "R\u00b2": 0.8326481206232861
+    },
+    "Random Forest": {
+      "MAE": 17954.345730593606,
+      "RMSE": 27833.001711218967,
+      "R\u00b2": 0.8990035151919819
+    },
+    "Average": {
+      "MAE": 62575.926451960964,
+      "RMSE": 87619.03450611533,
+      "R\u00b2": -0.0008824918802490256
+    }
+  },
+  "cv_scores": {
+    "Linear Regression": 0.7840434844394945,
+    "Random Forest": 0.8240226165878433,
+    "Average": -0.0016230320026094259
+  },
+  "default_values": {
+    "GrLivArea": 1473.0,
+    "TotalBsmtSF": 997.5,
+    "LotArea": 9600.0,
+    "BedroomAbvGr": 3.0,
+    "FullBath": 2.0,
+    "GarageCars": 2.0,
+    "OverallQual": 6.0,
+    "Age": 35.0,
+    "Neighborhood": "NAmes"
+  },
+  "feature_ranges": {
+    "GrLivArea": [
+      334.0,
+      5642.0
+    ],
+    "TotalBsmtSF": [
+      0.0,
+      6110.0
+    ],
+    "LotArea": [
+      1300.0,
+      215245.0
+    ],
+    "BedroomAbvGr": [
+      0.0,
+      8.0
+    ],
+    "FullBath": [
+      0.0,
+      3.0
+    ],
+    "GarageCars": [
+      0.0,
+      4.0
+    ],
+    "OverallQual": [
+      1.0,
+      10.0
+    ],
+    "Age": [
+      0.0,
+      136.0
+    ]
+  },
+  "category_options": {
+    "Neighborhood": [
+      "Blmngtn",
+      "Blueste",
+      "BrDale",
+      "BrkSide",
+      "ClearCr",
+      "CollgCr",
+      "Crawfor",
+      "Edwards",
+      "Gilbert",
+      "IDOTRR",
+      "MeadowV",
+      "Mitchel",
+      "NAmes",
+      "NPkVill",
+      "NWAmes",
+      "NoRidge",
+      "NridgHt",
+      "OldTown",
+      "SWISU",
+      "Sawyer",
+      "SawyerW",
+      "Somerst",
+      "StoneBr",
+      "Timber",
+      "Veenker"
+    ]
+  },
+  "model_files": {
+    "Linear Regression": "linear_regression.joblib",
+    "Random Forest": "random_forest.joblib",
+    "Average": "average.joblib"
+  },
+  "best_params": {
+    "Linear Regression": {},
+    "Random Forest": {
+      "min_samples_leaf": 1
+    },
+    "Average": {}
+  }
+}

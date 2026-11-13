@@ -1,0 +1,11 @@
+Column,Type,Missing,Distinct values
+GrLivArea,numeric,0,861
+TotalBsmtSF,numeric,0,721
+LotArea,numeric,0,1073
+BedroomAbvGr,numeric,0,8
+FullBath,numeric,0,4
+GarageCars,numeric,0,5
+OverallQual,numeric,0,10
+Age,numeric,0,122
+Neighborhood,category,0,25
+SalePrice,target,0,663

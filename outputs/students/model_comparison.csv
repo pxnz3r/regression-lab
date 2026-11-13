@@ -1,0 +1,4 @@
+Model,Role,CV r2,MAE,RMSE,R²
+Linear Regression,Main,0.841,0.746,1.155,0.863
+Random Forest,Benchmark beyond the course,0.846,0.731,1.209,0.85
+Average,Baseline,-0.02,2.395,3.173,-0.032

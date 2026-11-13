@@ -1,0 +1,12 @@
+,Linear Regression,Random Forest
+Highest temperature today (°C),0.4904,0.1312
+Mean temperature today (°C),0.1882,1.146
+Month,0.0606,0.0024
+Pressure change since yesterday (hPa),0.0065,0.0064
+Mean cloud cover (%),0.0054,0.0033
+Mean humidity (%),0.0021,-0.0008
+Lowest temperature today (°C),0.0018,0.0056
+Mean sea-level pressure (hPa),0.0016,0.0047
+Strongest wind (km/h),0.0003,0.0022
+Rain and snow (mm),0.0003,0.001
+Sunshine energy (MJ/m²),0.0002,0.0019

@@ -1,0 +1,7 @@
+Column,Type,Missing,Distinct values
+G1,numeric,0,17
+G2,numeric,0,16
+studytime,numeric,0,4
+absences,numeric,0,24
+failures,numeric,0,4
+G3,target,0,17

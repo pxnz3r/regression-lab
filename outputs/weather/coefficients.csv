@@ -1,0 +1,23 @@
+Input,Weight
+Highest temperature today (°C),2.7232
+Mean temperature today (°C),1.7222
+Month = 7,1.5741
+Month = 1,-1.2645
+Month = 8,1.2389
+Month = 6,1.1222
+Month = 2,-1.1073
+Month = 3,-0.9594
+Month = 12,-0.8635
+Month = 9,0.7287
+Month = 11,-0.7146
+Month = 5,0.4879
+Month = 4,-0.4232
+Pressure change since yesterday (hPa),0.304
+Mean cloud cover (%),0.2596
+Lowest temperature today (°C),0.197
+Mean humidity (%),0.1956
+Month = 10,0.1806
+Mean sea-level pressure (hPa),0.1474
+Rain and snow (mm),-0.0774
+Sunshine energy (MJ/m²),-0.0532
+Strongest wind (km/h),0.026
