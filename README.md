@@ -1,8 +1,28 @@
-# Regression lab
+<div align="center">
 
-Linear regression on three problems: house prices, student grades and tomorrow's temperature. How well it predicts, how it compares with simple baselines and a non-linear benchmark, and which inputs drive each prediction. Includes an interactive demo.
+<h1>Regression lab</h1>
 
-![Predicted against real temperatures on the test years](outputs/figures/weather/predicted_vs_actual.png)
+<p>Linear regression on three problems: house prices, student grades and tomorrow's temperature. How well it predicts, how it compares with simple baselines and a non-linear benchmark, and which inputs drive each prediction. Includes an interactive demo.</p>
+
+<p>
+<a href="https://github.com/pxnz3r/regression-lab/actions/workflows/ci.yml"><img src="https://github.com/pxnz3r/regression-lab/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<img src="https://img.shields.io/badge/python-3.14-blue" alt="Python 3.14">
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
+</p>
+
+<p><a href="docs/results.md">Results</a> · <a href="docs/methodology.md">Methodology</a> · <a href="docs/deploy.md">Deploy the demo</a></p>
+
+<img src="outputs/figures/weather/predicted_vs_actual.png" width="720" alt="Predicted against real temperatures on the test years">
+
+</div>
+
+## How it works
+
+1. **Load and check** three problems: house prices, student grades and tomorrow's temperature.
+2. **Fit** linear regression against simple baselines and a non-linear benchmark, tuned with cross-validation.
+3. **Score once** on a held-out test split and explain each model's inputs.
+4. **Test how sure the scores are** with bootstrap intervals, a paired test against every rival, learning curves and a baseline that ignores the inputs.
+5. **Study the errors** by price or grade range and by category, then **try it** in the Streamlit demo.
 
 ## Results
 
@@ -25,6 +45,18 @@ Always predicting the training average scores R² of about 0 on every dataset.
 - **Houses**: living area, overall quality and neighbourhood matter most. Prices curve upward with size and quality, which a straight line misses and a forest catches, hence the gap.
 
 Full tables and figures: [docs/results.md](docs/results.md). How it was done: [docs/methodology.md](docs/methodology.md).
+
+## How sure the results are
+
+**House prices: the forest is clearly ahead.** R² 0.899 (95% interval 0.862 to 0.927), and its errors are smaller than linear regression's on the Wilcoxon signed-rank test (p < 0.001). It still under-predicts the most expensive fifth of houses.
+
+**Grades and temperature: linear regression is enough.** The forest's edge on grades (p = 0.232) and linear regression's on temperature (p = 0.127) could both be chance. Temperature reaches R² 0.900 (0.888 to 0.912).
+
+**Linear regression never overfits here.** Training and validation R² stay within 0.03 on all three problems; the forest's gap on house prices is 0.15.
+
+**All models pull towards the average.** The coldest days are predicted too warm by about 1.1 °C, and the best students' grades too low.
+
+Every table and figure behind these is in [docs/results.md](docs/results.md).
 
 ## Run it
 
