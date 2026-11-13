@@ -27,6 +27,7 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay,
     RocCurveDisplay,
     accuracy_score,
+    balanced_accuracy_score,
     f1_score,
     mean_absolute_error,
     precision_score,
@@ -55,6 +56,9 @@ def classification_scores(pipeline, features, target, positive_class=None):
     predictions = pipeline.predict(features)
     scores = {"Accuracy": accuracy_score(target, predictions)}
     if positive_class is not None:
+        # Balanced accuracy averages the recall of both classes, so a model
+        # that always answers the bigger class scores 0.5, not its share.
+        scores["Balanced accuracy"] = balanced_accuracy_score(target, predictions)
         scores["Precision"] = precision_score(target, predictions, pos_label=positive_class, zero_division=0)
         scores["Recall"] = recall_score(target, predictions, pos_label=positive_class, zero_division=0)
         scores["F1"] = f1_score(target, predictions, pos_label=positive_class, zero_division=0)
